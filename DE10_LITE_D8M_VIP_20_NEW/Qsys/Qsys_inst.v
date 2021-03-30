@@ -1,0 +1,42 @@
+	Qsys u0 (
+		.altpll_0_areset_conduit_export                  (<connected-to-altpll_0_areset_conduit_export>),                  //                   altpll_0_areset_conduit.export
+		.altpll_0_locked_conduit_export                  (<connected-to-altpll_0_locked_conduit_export>),                  //                   altpll_0_locked_conduit.export
+		.clk_clk                                         (<connected-to-clk_clk>),                                         //                                       clk.clk
+		.clk_sdram_clk                                   (<connected-to-clk_sdram_clk>),                                   //                                 clk_sdram.clk
+		.d8m_xclkin_clk                                  (<connected-to-d8m_xclkin_clk>),                                  //                                d8m_xclkin.clk
+		.i2c_opencores_camera_export_scl_pad_io          (<connected-to-i2c_opencores_camera_export_scl_pad_io>),          //               i2c_opencores_camera_export.scl_pad_io
+		.i2c_opencores_camera_export_sda_pad_io          (<connected-to-i2c_opencores_camera_export_sda_pad_io>),          //                                          .sda_pad_io
+		.i2c_opencores_mipi_export_scl_pad_io            (<connected-to-i2c_opencores_mipi_export_scl_pad_io>),            //                 i2c_opencores_mipi_export.scl_pad_io
+		.i2c_opencores_mipi_export_sda_pad_io            (<connected-to-i2c_opencores_mipi_export_sda_pad_io>),            //                                          .sda_pad_io
+		.key_external_connection_export                  (<connected-to-key_external_connection_export>),                  //                   key_external_connection.export
+		.led_external_connection_export                  (<connected-to-led_external_connection_export>),                  //                   led_external_connection.export
+		.mipi_pwdn_n_external_connection_export          (<connected-to-mipi_pwdn_n_external_connection_export>),          //           mipi_pwdn_n_external_connection.export
+		.mipi_reset_n_external_connection_export         (<connected-to-mipi_reset_n_external_connection_export>),         //          mipi_reset_n_external_connection.export
+		.new_sdram_controller_0_wire_addr                (<connected-to-new_sdram_controller_0_wire_addr>),                //               new_sdram_controller_0_wire.addr
+		.new_sdram_controller_0_wire_ba                  (<connected-to-new_sdram_controller_0_wire_ba>),                  //                                          .ba
+		.new_sdram_controller_0_wire_cas_n               (<connected-to-new_sdram_controller_0_wire_cas_n>),               //                                          .cas_n
+		.new_sdram_controller_0_wire_cke                 (<connected-to-new_sdram_controller_0_wire_cke>),                 //                                          .cke
+		.new_sdram_controller_0_wire_cs_n                (<connected-to-new_sdram_controller_0_wire_cs_n>),                //                                          .cs_n
+		.new_sdram_controller_0_wire_dq                  (<connected-to-new_sdram_controller_0_wire_dq>),                  //                                          .dq
+		.new_sdram_controller_0_wire_dqm                 (<connected-to-new_sdram_controller_0_wire_dqm>),                 //                                          .dqm
+		.new_sdram_controller_0_wire_ras_n               (<connected-to-new_sdram_controller_0_wire_ras_n>),               //                                          .ras_n
+		.new_sdram_controller_0_wire_we_n                (<connected-to-new_sdram_controller_0_wire_we_n>),                //                                          .we_n
+		.reset_reset_n                                   (<connected-to-reset_reset_n>),                                   //                                     reset.reset_n
+		.sw_external_connection_export                   (<connected-to-sw_external_connection_export>),                   //                    sw_external_connection.export
+		.terasic_auto_focus_0_conduit_vcm_i2c_sda        (<connected-to-terasic_auto_focus_0_conduit_vcm_i2c_sda>),        //              terasic_auto_focus_0_conduit.vcm_i2c_sda
+		.terasic_auto_focus_0_conduit_clk50              (<connected-to-terasic_auto_focus_0_conduit_clk50>),              //                                          .clk50
+		.terasic_auto_focus_0_conduit_vcm_i2c_scl        (<connected-to-terasic_auto_focus_0_conduit_vcm_i2c_scl>),        //                                          .vcm_i2c_scl
+		.terasic_camera_0_conduit_end_D                  (<connected-to-terasic_camera_0_conduit_end_D>),                  //              terasic_camera_0_conduit_end.D
+		.terasic_camera_0_conduit_end_FVAL               (<connected-to-terasic_camera_0_conduit_end_FVAL>),               //                                          .FVAL
+		.terasic_camera_0_conduit_end_LVAL               (<connected-to-terasic_camera_0_conduit_end_LVAL>),               //                                          .LVAL
+		.terasic_camera_0_conduit_end_PIXCLK             (<connected-to-terasic_camera_0_conduit_end_PIXCLK>),             //                                          .PIXCLK
+		.video_vga_controller_0_external_interface_CLK   (<connected-to-video_vga_controller_0_external_interface_CLK>),   // video_vga_controller_0_external_interface.CLK
+		.video_vga_controller_0_external_interface_HS    (<connected-to-video_vga_controller_0_external_interface_HS>),    //                                          .HS
+		.video_vga_controller_0_external_interface_VS    (<connected-to-video_vga_controller_0_external_interface_VS>),    //                                          .VS
+		.video_vga_controller_0_external_interface_BLANK (<connected-to-video_vga_controller_0_external_interface_BLANK>), //                                          .BLANK
+		.video_vga_controller_0_external_interface_SYNC  (<connected-to-video_vga_controller_0_external_interface_SYNC>),  //                                          .SYNC
+		.video_vga_controller_0_external_interface_R     (<connected-to-video_vga_controller_0_external_interface_R>),     //                                          .R
+		.video_vga_controller_0_external_interface_G     (<connected-to-video_vga_controller_0_external_interface_G>),     //                                          .G
+		.video_vga_controller_0_external_interface_B     (<connected-to-video_vga_controller_0_external_interface_B>)      //                                          .B
+	);
+

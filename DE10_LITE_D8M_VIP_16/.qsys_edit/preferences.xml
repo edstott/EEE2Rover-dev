@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="303" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="201" />
+   <export preferredWidth="267" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions/Clocks; PLLs and Resets,Library/Basic Functions/Clocks; PLLs and Resets/PLL,Library,Library/DSP,Library/DSP/Video and Image Processing,Project,Library/Basic Functions" />
+ <window width="1971" height="1159" x="530" y="233" />
+</preferences>

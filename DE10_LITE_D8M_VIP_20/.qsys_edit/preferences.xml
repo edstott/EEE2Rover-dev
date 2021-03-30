@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="303" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="201" />
+   <export preferredWidth="267" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Memory Interfaces and Controllers/SDRAM,Library/Basic Functions,Project,Library,Library/University Program/Memory,Library/University Program/Audio &amp; Video,Library/University Program/Audio &amp; Video/Video,Library/Basic Functions/On Chip Memory,Library/University Program,Library/DSP,Library/Memory Interfaces and Controllers" />
+ <window width="2000" height="1169" x="1000" y="162" />
+</preferences>
