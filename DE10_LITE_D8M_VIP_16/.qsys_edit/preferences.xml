@@ -3,13 +3,12 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="303" />
+   <connections preferredWidth="319" />
    <irq preferredWidth="34" />
    <name preferredWidth="201" />
    <export preferredWidth="267" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions/Clocks; PLLs and Resets,Library/Basic Functions/Clocks; PLLs and Resets/PLL,Library,Library/DSP,Library/DSP/Video and Image Processing,Project,Library/Basic Functions" />
- <window width="1971" height="1159" x="530" y="233" />
+ <library expandedCategories="Project/Terasic Technologies Inc,Library,Project" />
+ <window width="1971" height="1159" x="71" y="282" />
 </preferences>

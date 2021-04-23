@@ -121,9 +121,9 @@ end
 wire [1:0] bayer_case;
 ////assign bayer_case = USER_CTRL?{~BAYER_Y[0], ~BAYER_X[0]}:{BAYER_Y[0], BAYER_X[0]}; // col & row inverse
 //assign bayer_case = {BAYER_Y[0], BAYER_X[0]}; 
-////assign bayer_case = {~BAYER_Y[0], ~BAYER_X[0]}; // col & row inverse
+assign bayer_case = {~BAYER_Y[0], BAYER_X[0]}; // col & row inverse
 
-assign bayer_case = {BAYER_Y[0], ~BAYER_X[0]};  // richard try
+//assign bayer_case = {BAYER_Y[0], ~BAYER_X[0]};  // richard try
 
 
 wire [13:0] avg1_sum, avg2_sum;
@@ -135,7 +135,7 @@ add4 add4_avg1(
 	.data0x(D[1]),
 	.data1x(D[3]),
 	.data2x(D[5]),
-	.data3x(D[6]),
+	.data3x(D[7]),
 	.result(avg1_sum));
 
 assign avg1 = avg1_sum[13:2];// >> 2; //(D[1]+D[3]+D[5]+D[7]) >> 2;
@@ -237,23 +237,23 @@ begin
 	begin
 		if (bayer_case == 2'b00)
 		begin // case (a)
-			RGB_B <= avg3;//(D[7]+D[17]) >> 1;
-			RGB_R <= avg4;//(D[11]+D[13]) >> 1;
+			RGB_R <= avg3;//(D[7]+D[17]) >> 1;
+			RGB_B <= avg4;//(D[11]+D[13]) >> 1;
 		end
 		else if (bayer_case == 2'b01)
 		begin // case (c)
-			RGB_R <= avg0;//D[12];
-			RGB_B <= avg2;//(D[6]+D[8]+D[16]+D[18]) >> 2;
+			RGB_B <= avg0;//D[12];
+			RGB_R <= avg2;//(D[6]+D[8]+D[16]+D[18]) >> 2;
 		end
 		else if (bayer_case == 2'b10)
 		begin // case (d)
-			RGB_B <= avg0;// D[12];
-			RGB_R <= avg2;//(D[6]+D[8]+D[16]+D[18]) >> 2;
+			RGB_R <= avg0;// D[12];
+			RGB_B <= avg2;//(D[6]+D[8]+D[16]+D[18]) >> 2;
 		end
 		else if (bayer_case == 2'b11)
 		begin // case (b)
-			RGB_R <= avg3;//(D[7]+D[17]) >> 1;
-			RGB_B <= avg4;//(D[11]+D[13]) >> 1;
+			RGB_B <= avg3;//(D[7]+D[17]) >> 1;
+			RGB_R <= avg4;//(D[11]+D[13]) >> 1;
 		end
 	end
 	else

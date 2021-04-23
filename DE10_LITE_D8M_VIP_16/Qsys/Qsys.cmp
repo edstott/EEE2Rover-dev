@@ -10,16 +10,12 @@
 			alt_vip_itc_0_clocked_video_vid_h         : out   std_logic;                                        -- vid_h
 			alt_vip_itc_0_clocked_video_vid_v         : out   std_logic;                                        -- vid_v
 			altpll_0_areset_conduit_export            : in    std_logic                     := 'X';             -- export
-			altpll_0_configupdate_conduit_export      : in    std_logic                     := 'X';             -- export
 			altpll_0_locked_conduit_export            : out   std_logic;                                        -- export
-			altpll_0_scanclkena_conduit_export        : in    std_logic                     := 'X';             -- export
-			altpll_0_scandata_conduit_export          : in    std_logic                     := 'X';             -- export
-			altpll_0_scandataout_conduit_export       : out   std_logic;                                        -- export
-			altpll_0_scandone_conduit_export          : out   std_logic;                                        -- export
 			clk_clk                                   : in    std_logic                     := 'X';             -- clk
 			clk_sdram_clk                             : out   std_logic;                                        -- clk
 			clk_vga_clk                               : out   std_logic;                                        -- clk
 			d8m_xclkin_clk                            : out   std_logic;                                        -- clk
+			eee_imgproc_0_conduit_mode_new_signal     : in    std_logic                     := 'X';             -- new_signal
 			i2c_opencores_camera_export_scl_pad_io    : inout std_logic                     := 'X';             -- scl_pad_io
 			i2c_opencores_camera_export_sda_pad_io    : inout std_logic                     := 'X';             -- sda_pad_io
 			i2c_opencores_mipi_export_scl_pad_io      : inout std_logic                     := 'X';             -- scl_pad_io

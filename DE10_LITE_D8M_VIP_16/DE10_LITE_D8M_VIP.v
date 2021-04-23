@@ -174,7 +174,9 @@ Qsys u0 (
 		
 		.altpll_0_areset_conduit_export            (),            				//          altpll_0_areset_conduit.export
 		.altpll_0_locked_conduit_export            (),            				//          altpll_0_locked_conduit.export
-		.altpll_0_phasedone_conduit_export         ()         					//       altpll_0_phasedone_conduit.export		
+		.altpll_0_phasedone_conduit_export         (),         					//       altpll_0_phasedone_conduit.export		
+		
+		.eee_imgproc_0_conduit_mode_new_signal     (SW[0])
 	);
 
 FpsMonitor uFps(
