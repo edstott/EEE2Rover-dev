@@ -75,7 +75,8 @@ wire [23:0] source_data_red_det;
 assign source_data_red_det  =  red_detect ? {8'hff, 8'h0, 8'h0} : {sink_data[15:8], sink_data[15:8], sink_data[15:8]};
 
 // Switch output pixels depending on mode
-assign source_data = mode ? source_data_red_det : sink_data;
+// Always pass through the start-of-packet word unchanged
+assign source_data = (mode & ~sink_sop) ? source_data_red_det : sink_data;
 
 // connnect sink & source direct
 assign source_valid =  sink_valid;
